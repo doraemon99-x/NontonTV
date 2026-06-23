@@ -25,8 +25,22 @@ jobs:
       - name: Build Release APK
         run: ./gradlew assembleRelease
 
+      - name: Sign APK
+        run: |
+          APK=$(find app/build/outputs/apk/release -name "*.apk" | head -1)
+          $ANDROID_HOME/build-tools/30.0.3/zipalign -v -p 4 $APK app/build/outputs/apk/release/aligned.apk
+          keytool -genkey -v -keystore debug.jks -alias debug \
+            -keyalg RSA -keysize 2048 -validity 365 \
+            -dname "CN=Debug, OU=Debug, O=Debug, L=Debug, S=Debug, C=US" \
+            -storepass android -keypass android -noprompt
+          $ANDROID_HOME/build-tools/30.0.3/apksigner sign \
+            --ks debug.jks --ks-alias debug \
+            --ks-pass pass:android --key-pass pass:android \
+            --out app/build/outputs/apk/release/signed.apk \
+            app/build/outputs/apk/release/aligned.apk
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: NontonTV-release
-          path: app/build/outputs/apk/release/*.apk
+          path: app/build/outputs/apk/release/signed.apk
