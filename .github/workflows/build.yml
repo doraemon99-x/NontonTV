@@ -34,8 +34,9 @@ jobs:
             -dname "CN=Debug, OU=Debug, O=Debug, L=Debug, S=Debug, C=US" \
             -storepass android -keypass android -noprompt
           $ANDROID_HOME/build-tools/30.0.3/apksigner sign \
-            --ks debug.jks --ks-alias debug \
-            --ks-pass pass:android --key-pass pass:android \
+            --ks debug.jks \
+            --ks-pass pass:android \
+            --key-pass pass:android \
             --out app/build/outputs/apk/release/signed.apk \
             app/build/outputs/apk/release/aligned.apk
 
