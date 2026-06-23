@@ -1,0 +1,95 @@
+{
+  "categories": [
+    {
+      "name": "#2. LIVE EVENT",
+      "channels": [
+        {
+          "name": "AVC Men's Cup 2026",
+          "stream_url": "https://avd.tipime.my.id/dash/21714",
+          "drm_id": "ck_avc_avc",
+          "logo": "https://i.imgur.com/R1lfiKd.png",
+          "user_agent": "Mozilla/5.0 (Linux; Android 11; Smart TV Build/AR2101; wv)",
+          "referer": "https://tv.vidio.com/"
+        }
+      ]
+    },
+    {
+      "name": "#5. Sports",
+      "channels": [
+        {
+          "name": "Bein 2 Vid",
+          "stream_url": "https://vid.tipime.my.id/beinvid2",
+          "drm_id": "wv_bein2",
+          "logo": "https://thumbor.prod.vidiocdn.com/c_w_GED5RwmvVMqOZXzRj1j9BLo=/112x112/filters:quality(70)/vidio-web-prod-livestreaming/uploads/livestreaming/square_image/6317/4a8762.png",
+          "user_agent": "Mozilla/5.0 (Linux; Android 11; Smart TV Build/AR2101; wv)",
+          "referer": "https://tv.vidio.com/"
+        },
+        {
+          "name": "beIN Sports Indo 2",
+          "stream_url": "https://d6m3sfa7e58z5.cloudfront.net/out/v1/cfca527d0f16403396a71b2d3d54c32f/index.mpd",
+          "drm_id": "ck_bein2",
+          "logo": "https://www.visionplus.id/images/repository/772/198772-LOGO-m.png",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "name": "FIFA World Cup 2026",
+      "channels": [
+        {
+          "name": "Free 12",
+          "stream_url": "https://d1211whpimeups.cloudfront.net/smil:rtbgo/playlist.m3u8",
+          "logo": "https://i.imgur.com/A7zSaVY.png"
+        },
+        {
+          "name": "Free 13",
+          "stream_url": "https://estreams.tv.nej.cz/dash/CH_TVP_SPORT_Portable.ism/playlist.mpd",
+          "logo": "https://i.imgur.com/A7zSaVY.png"
+        },
+        {
+          "name": "TSEL 1",
+          "stream_url": "https://vid.tipime.my.id/livetselwc1",
+          "drm_id": "ck_tsel1",
+          "logo": "https://i.imgur.com/A7zSaVY.png",
+          "user_agent": "Mozilla/5.0",
+          "referer": "https://maxstream.tv/"
+        },
+        {
+          "name": "TSEL 2",
+          "stream_url": "https://vid.tipime.my.id/livetselwc2",
+          "drm_id": "ck_tsel2",
+          "logo": "https://i.imgur.com/A7zSaVY.png",
+          "user_agent": "Mozilla/5.0",
+          "referer": "https://maxstream.tv/"
+        }
+      ]
+    }
+  ],
+  "drm_licenses": [
+    {
+      "drm_id": "ck_avc_avc",
+      "drm_type": "clearkey",
+      "drm_key": "7eaf782c3882a36b9e9bafbece84a5ce:2b10522158299703915e4c5adcd165cd"
+    },
+    {
+      "drm_id": "wv_bein2",
+      "drm_type": "widevine",
+      "drm_key": "https://avd.tipime.my.id/pally/17875"
+    },
+    {
+      "drm_id": "ck_bein2",
+      "drm_type": "clearkey",
+      "drm_key": "3d756d566ca94e6499518ffb1474d5d0:dbe4ad6803e74739b8f954d23cc58e7b"
+    },
+    {
+      "drm_id": "ck_tsel1",
+      "drm_type": "clearkey",
+      "drm_key": "efe538648aad30c9893edf1a69eb8c8e:fe9b77088a67777af435c3fa5f1bbdd0"
+    },
+    {
+      "drm_id": "ck_tsel2",
+      "drm_type": "clearkey",
+      "drm_key": "618880fd141330378cf6aff5d48a252c:835e5fc97bfec870d8ac7e3d145e14ad"
+    }
+  ]
+}
